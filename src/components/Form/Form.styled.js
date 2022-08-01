@@ -15,6 +15,6 @@ export const ContactsLabel = styled.label`
 export const ContactsInput = styled.input`
   margin-bottom: 10px;
   margin-top: 10px;
-  height: 30px;
+  height: 20px;
   min-width: 300px;
 `;
