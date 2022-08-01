@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ListItem } from './ContactsListItem.styled';
 import { Button } from '../Button/Button.styled';
 
@@ -10,6 +11,13 @@ const ContactsListItem = ({ id, name, number, onDelete }) => {
       </Button>
     </ListItem>
   );
+};
+
+ContactsListItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.node.isRequired,
+  id: PropTypes.string.isRequired,
+  onDelete: PropTypes.elementType.isRequired,
 };
 
 export default ContactsListItem;

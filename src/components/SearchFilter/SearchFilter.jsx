@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ContactsLabel, ContactsInput } from '../Form/Form.styled';
 
 const SearchFilter = ({ value, changeFilter }) => {
@@ -12,6 +13,11 @@ const SearchFilter = ({ value, changeFilter }) => {
       />
     </ContactsLabel>
   );
+};
+
+SearchFilter.propTypes = {
+  value: PropTypes.string.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 export default SearchFilter;
